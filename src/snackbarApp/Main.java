@@ -40,6 +40,8 @@ public class Main {
       chocolateBar.removeSnacks(1);
       System.out.println("Customer 1 Cash on Hand: " + jane.getCashOnHand());
       System.out.println("Quantity of Snack 2: " + chocolateBar.getQuantity());
+      pretzel.restockSnacks(12);
+      System.out.println("Quantity of Snack 3: " + pretzel.getQuantity());
 
    }
 

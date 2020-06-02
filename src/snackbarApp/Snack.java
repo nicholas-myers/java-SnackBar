@@ -65,4 +65,8 @@ public class Snack
    {
       this.quantity -= snacksPurchased;
    }
+   public void restockSnacks(int snacksAdded)
+   {
+      this.quantity += snacksAdded;
+   }
 }
