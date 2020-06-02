@@ -32,4 +32,10 @@ public class VendingMachine {
     {
         this.name = name;
     }
+
+    @Override
+    public String toString()
+    {
+        return "Name: " + name;
+    }
 }

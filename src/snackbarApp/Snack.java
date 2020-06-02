@@ -60,5 +60,9 @@ public class Snack
    {
       this.vendingMachineId = vendingMachineId;
    }
-   
+   // a customer buys a snack
+   public void removeSnacks(int snacksPurchased)
+   {
+      this.quantity -= snacksPurchased;
+   }
 }
