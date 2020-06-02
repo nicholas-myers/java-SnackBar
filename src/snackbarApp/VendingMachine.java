@@ -32,6 +32,7 @@ public class VendingMachine {
     {
         this.name = name;
     }
+    // find the right Vending Machine
 
     @Override
     public String toString()

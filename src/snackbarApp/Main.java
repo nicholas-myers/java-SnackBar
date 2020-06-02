@@ -45,9 +45,40 @@ public class Main {
       System.out.println("Customer 2 buys 3 of snack 3.");
       bob.buySnacks(pretzel.getCost(), 3);
       pretzel.removeSnacks(3);
-      System.out.println("Customer 2 Cash on Hand: " + bob.getCashOnHand())
+      System.out.println("Customer 2 Cash on Hand: " + bob.getCashOnHand());
       System.out.println("Quantity of Snack 3: " + pretzel.getQuantity());
-
+      System.out.println();
+      System.out.println("*** STRETCH ***");
+      System.out.println();
+      System.out.println("Snack: " + chips.getName());
+      System.out.println("Vending Machine: " + food.getName() );
+      System.out.println("Quantity: " + chips.getQuantity() );
+      double totalChipCost = chips.getQuantity() * chips.getCost();
+      System.out.printf("Total Cost: $%.2f %n", totalChipCost);
+      System.out.println();
+      System.out.println("Snack: " + chocolateBar.getName());
+      System.out.println("Vending Machine: " + food.getName() );
+      System.out.println("Quantity: " + chocolateBar.getQuantity() );
+      double totalChocolateBarCost = chocolateBar.getQuantity() * chocolateBar.getCost();
+      System.out.printf("Total Cost: $%.2f %n", totalChocolateBarCost);
+      System.out.println();
+      System.out.println("Snack: " + pretzel.getName());
+      System.out.println("Vending Machine: " + food.getName() );
+      System.out.println("Quantity: " + pretzel.getQuantity() );
+      double totalPretzelCost = pretzel.getQuantity() * pretzel.getCost();
+      System.out.printf("Total Cost: $%.2f %n", totalPretzelCost);
+      System.out.println();
+      System.out.println("Snack: " + soda.getName());
+      System.out.println("Vending Machine: " + drink.getName() );
+      System.out.println("Quantity: " + soda.getQuantity() );
+      double totalSodaCost = soda.getQuantity() * soda.getCost();
+      System.out.printf("Total Cost: $%.2f %n", totalSodaCost);
+      System.out.println();
+      System.out.println("Snack: " + water.getName());
+      System.out.println("Vending Machine: " + drink.getName() );
+      System.out.println("Quantity: " + water.getQuantity() );
+      double totalWaterCost = water.getQuantity() * water.getCost();
+      System.out.printf("Total Cost: $%.2f %n", totalWaterCost);
 
    }
 
