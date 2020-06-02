@@ -28,7 +28,11 @@ public class Main {
       pretzel.removeSnacks(1);
       System.out.println("Customer 1 Cash on Hand: " + jane.getCashOnHand());
       System.out.println("Quantity of snack 3 is " + pretzel.getQuantity());
-
+      System.out.println("Customer 2 buys 2 of snack 4.");
+      bob.buySnacks(soda.getCost(), 2);
+      soda.removeSnacks(2);
+      System.out.println("Customer 3 Cash on Hand: " + bob.getCashOnHand());
+      System.out.println("Quantity of snack 4 is " + soda.getQuantity());
    }
 
    public static void main(String[] args)
