@@ -6,7 +6,7 @@ public class Main {
       VendingMachine drink = new VendingMachine("Drink");
       VendingMachine office = new VendingMachine("Office");
       Snack chips = new Snack("Chips", 36, 1.75, food.getId()); // snack 1
-      Snack chocolateBar = new Snack("Chocolate Bar", 35, 1.00, food.getId()); // snack 2
+      Snack chocolateBar = new Snack("Chocolate Bar", 36, 1.00, food.getId()); // snack 2
       Snack pretzel = new Snack("Pretzel", 30, 2.00, food.getId()); //snack 3
       Snack soda = new Snack("Soda", 24, 2.50, drink.getId()); //snack 4
       Snack water = new Snack("Water", 20, 2.75, drink.getId()); //snack 5
@@ -33,6 +33,14 @@ public class Main {
       soda.removeSnacks(2);
       System.out.println("Customer 3 Cash on Hand: " + bob.getCashOnHand());
       System.out.println("Quantity of snack 4 is " + soda.getQuantity());
+      jane.findCash(10.00);
+      System.out.println("Customer 1 Cash on Hand: " + jane.getCashOnHand());
+      System.out.println("Customer 1 buys 1 of snack 2.");
+      jane.buySnacks(chocolateBar.getCost(), 1);
+      chocolateBar.removeSnacks(1);
+      System.out.println("Customer 1 Cash on Hand: " + jane.getCashOnHand());
+      System.out.println("Quantity of Snack 2: " + chocolateBar.getQuantity());
+
    }
 
    public static void main(String[] args)

@@ -44,7 +44,10 @@ public class Customer {
         this.cashOnHand -= snackCost * snacksPurchased;
     }
 
-    // override
+    public void findCash(double foundCash)
+    {
+        this.cashOnHand += foundCash;
+    }
     
 
 }
