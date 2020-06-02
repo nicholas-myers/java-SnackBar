@@ -21,6 +21,8 @@ public class Main {
       System.out.println("Customer 1 buys 3 of snack 4.");
       jane.buySnacks(soda.getCost(), 3);
       System.out.println("Customer 1 Cash on Hand: " + jane.getCashOnHand());
+      soda.removeSnacks(3);
+      System.out.println("Quantity of snack 4 is " + soda.getQuantity());
    }
 
    public static void main(String[] args)
