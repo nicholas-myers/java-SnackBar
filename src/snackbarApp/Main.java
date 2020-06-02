@@ -42,6 +42,12 @@ public class Main {
       System.out.println("Quantity of Snack 2: " + chocolateBar.getQuantity());
       pretzel.restockSnacks(12);
       System.out.println("Quantity of Snack 3: " + pretzel.getQuantity());
+      System.out.println("Customer 2 buys 3 of snack 3.");
+      bob.buySnacks(pretzel.getCost(), 3);
+      pretzel.removeSnacks(3);
+      System.out.println("Customer 2 Cash on Hand: " + bob.getCashOnHand())
+      System.out.println("Quantity of Snack 3: " + pretzel.getQuantity());
+
 
    }
 
